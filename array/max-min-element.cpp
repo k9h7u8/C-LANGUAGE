@@ -15,20 +15,20 @@ int main()
         cin >> arr[i];
     }
 
-    int max = arr[0]; // temporary // 5
-    int min = arr[1];
+    int maxNo = INT_MIN; // temporary // 5
+    int minNo = INT_MAX;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > max)
+        if (arr[i] > maxNo)
         {
-            max = arr[i];
+            maxNo = arr[i];
         }
-        if (arr[i] < min)
+        if (arr[i] < minNo)
         {
-            min = arr[i];
+            minNo = arr[i];
         }
     }
-    cout << max << " " << min << endl;
+    cout << maxNo << " " << minNo << endl;
 
     return 0;
 }
