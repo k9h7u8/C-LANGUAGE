@@ -4,6 +4,7 @@ using namespace std;
 
 int main() 
 {
+    string s1 = "good";
     //find
     // give index no
     cout<<s1.find("ood");
